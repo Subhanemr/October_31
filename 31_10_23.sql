@@ -33,7 +33,7 @@ CREATE TABLE Musics (
 )
 
 CREATE TABLE Playlist (
-    PlaylistId INT,
+    PlaylistId INT PRIMARY KEY IDENTITY,
     MusicId INT,
     UserId INT,
     FOREIGN KEY (MusicId) REFERENCES Musics(MusicId),
@@ -61,7 +61,7 @@ INSERT INTO Musics ([Name], Duration, CategoryID)
 VALUES ('Toska', 295, 1)
 
 INSERT INTO Playlist (PlaylistID, MusicID, UserID)
-VALUES (1, 1, 1)
+VALUES (1, 1)
 
 INSERT INTO MusicArtist (MusicID, ArtistID)
 VALUES (1, 1)
