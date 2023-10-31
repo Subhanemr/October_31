@@ -60,7 +60,7 @@ VALUES ('Post-Punk')
 INSERT INTO Musics ([Name], Duration, CategoryID)
 VALUES ('Toska', 295, 1)
 
-INSERT INTO Playlist (PlaylistID, MusicID, UserID)
+INSERT INTO Playlist (MusicID, UserID)
 VALUES (1, 1)
 
 INSERT INTO MusicArtist (MusicID, ArtistID)
